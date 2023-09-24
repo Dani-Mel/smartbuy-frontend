@@ -38,7 +38,7 @@ export default function Navigation() {
             </ul>
             <Searchbar />
             <LanguageSwitch />
-            <Link href={"#"}>
+            <Link href={"/identity/cart"}>
                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
