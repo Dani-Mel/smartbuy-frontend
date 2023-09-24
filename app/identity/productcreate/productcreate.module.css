@@ -26,7 +26,7 @@
     border-radius: 5px;
   }
   
-  button {
+  .button {
     background-color:#ffffff; 
     color: #080710;
     padding: 10px 20px;
@@ -35,7 +35,6 @@
     cursor: pointer;
   }
   
-  /* Add hover effect for the button */
-  button:hover {
+  .button:hover {
     background-color: rgba(255, 255, 255, 0.13);
   }
