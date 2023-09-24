@@ -129,7 +129,7 @@ export default function ProfilePopup({
                         fill="#777777"
                      />
                   </svg>
-                  <Link href={"#"}>Створити товар</Link>
+                  <Link href={"/identity/productcreate"}>Створити товар</Link>
                </li>
             </ul>
          </div>
