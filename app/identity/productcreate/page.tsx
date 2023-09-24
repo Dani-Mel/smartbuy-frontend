@@ -1,13 +1,14 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+"use client"
+import { useState, ChangeEvent, FormEvent, } from "react";
 import styles from "./productcreate.module.css";
 import { useRouter } from "next/router";
 
 function Create() {
   const [formData, setFormData] = useState({
-    name: '',
-    description: '',
+    name: "",
+    description: "",
     file: null as File | null,
-    category: '', // Add the category field
+    category: "",
   });
 
   const router = useRouter();
@@ -19,13 +20,15 @@ function Create() {
       [name]: value,
     }));
   };
+
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
+  };
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    router.push("/success"); 
+    router.push("/success");
   };
 
   return (
@@ -90,5 +93,4 @@ function Create() {
       </div>
     </>
   );
-}
 }

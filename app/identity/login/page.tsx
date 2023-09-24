@@ -17,6 +17,7 @@ export default function Login() {
          [e.target.name]: e.target.value,
       });
    }
+   
    async function LogIn({ cred }: { cred: Credentials }) {
       const res = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL + "/api/identity/login", {
          credentials: "include",
@@ -77,5 +78,5 @@ export default function Login() {
          </div>
       </>
    );
-   
+
 }
