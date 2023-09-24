@@ -88,7 +88,7 @@ function Create() {
             maxLength={20}
           />
 
-          <button type="submit">Створити</button>
+<input type="submit" className={styles.button} value="Створити" />
         </form>
       </div>
     </>
